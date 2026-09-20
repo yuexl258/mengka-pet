@@ -1,0 +1,28 @@
+{
+  "name": "qq-pet-frontend",
+  "private": true,
+  "version": "0.2.6",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "package:exe": "npm run build && go build -trimpath -ldflags \"-s -w -X main.version=0.2.6\" -o ../version/0.2.6/qq-pet-windows-amd64/qq-pet-frontend.exe .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "element-plus": "^2.10.4",
+    "pinia": "^3.0.3",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.0.5"
+  }
+}

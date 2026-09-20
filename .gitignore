@@ -1,0 +1,49 @@
+# Only publish the application source and repository documentation.
+*
+!.gitignore
+!README.md
+!LICENSE
+!LICENSE.*
+!backend/
+!backend/**
+!frontend/
+!frontend/**
+
+# Runtime data and secrets
+**/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+.env
+.env.*
+
+# Logs and archives
+*.log
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Dependencies and generated output
+**/node_modules/
+**/dist/
+**/.frontend-build/
+**/coverage/
+
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+backend/qq-pet
+frontend/qq-pet-frontend
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
