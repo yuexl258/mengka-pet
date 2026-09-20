@@ -1,12 +1,12 @@
 {
   "name": "qq-pet-frontend",
   "private": true,
-  "version": "0.2.6",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "package:exe": "npm run build && go build -trimpath -ldflags \"-s -w -X main.version=0.2.6\" -o ../version/0.2.6/qq-pet-windows-amd64/qq-pet-frontend.exe .",
+    "package:exe": "npm run build && go build -trimpath -ldflags \"-s -w -X main.version=1.0.0\" -o ../version/1.0.0/qq-pet-windows-amd64/qq-pet-frontend.exe .",
     "test": "vitest run"
   },
   "dependencies": {

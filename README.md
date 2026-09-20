@@ -177,7 +177,7 @@ go build -trimpath -o qq-pet-server.exe ./cmd/server
 cd frontend
 npm ci
 npm run build
-go build -trimpath -ldflags "-s -w -X main.version=0.2.6" -o qq-pet-frontend.exe .
+go build -trimpath -ldflags "-s -w -X main.version=1.0.0" -o qq-pet-frontend.exe .
 ```
 
 交叉编译时可按目标平台设置 `GOOS` 和 `GOARCH`。SQLite 驱动不依赖 CGO。

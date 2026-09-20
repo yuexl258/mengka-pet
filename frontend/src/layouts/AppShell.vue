@@ -14,7 +14,7 @@ const auth = useAuthStore()
 const system = useSystemStore()
 const collapsed = ref(false)
 const mobileNavVisible = ref(false)
-const version = ref('v0.1.3')
+const version = ref('v1.0.0')
 const title = computed(() => String(route.meta.title || system.name))
 const links = computed(() => props.admin ? [
   { to: '/admin', label: '管理概览', icon: Monitor },

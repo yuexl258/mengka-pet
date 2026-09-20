@@ -16,7 +16,7 @@ type Config struct {
 func Load() Config {
 	return Config{
 		Addr:           ":8080",
-		Version:        "0.2.6",
+		Version:        "1.0.0",
 		Environment:    "development",
 		DatabasePath:   "./data/qq-pet.db",
 		FrontendOrigin: "http://localhost:5173",
